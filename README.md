@@ -12,8 +12,8 @@
 Include ThreeSixty.js and three.js lib.
 
 ```html
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
-    <script src="ThreeSixty.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+<script src="ThreeSixty.js"></script>
 ````
 
 Add this basic code:
