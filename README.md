@@ -4,7 +4,6 @@
 
 ### Examples
 
-* [basic example](http://heganoo.github.io/ThreeSixty/examples).
 * [heganoo.com story map 'North America 360'](http://heganoo.com/node/8177/8179).
 
 #### Using the code
