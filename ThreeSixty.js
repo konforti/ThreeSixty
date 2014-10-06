@@ -40,7 +40,7 @@ function threeSixty( vars ) {
       isDrag = false,
       isPause = false,
       isPlanet = false,
-      isFull = false,
+//      isFull = false,
       lon = 0,
       lat = 0,
       phi = 0,
@@ -215,26 +215,26 @@ function threeSixty( vars ) {
       } );
     }
 
-    if ( typeof vars.controls.fullWidth !== 'undefined' && vars.controls.fullWidth === true ) {
-      /**
-       * Full-width event.
-       */
-      controls.innerHTML += '<a href="javascript:void(0)" id="pano-full">Full Width</a>';
-      document.addEventListener( 'click', function ( e ) {
-        if ( e.target.id == 'pano-full' ) {
-          isFull = isFull == true ? false : true;
-          if ( isFull == true ) {
-            container.classList.add( 'full-width' );
-            e.target.classList.add( 'active' );
-          }
-          else {
-            container.classList.remove( 'full-width' );
-            e.target.classList.remove( 'active' );
-          }
-        }
-
-      } );
-    }
+//    if ( typeof vars.controls.fullWidth !== 'undefined' && vars.controls.fullWidth === true ) {
+//      /**
+//       * Full-width event.
+//       */
+//      controls.innerHTML += '<a href="javascript:void(0)" id="pano-full">Full Width</a>';
+//      document.addEventListener( 'click', function ( e ) {
+//        if ( e.target.id == 'pano-full' ) {
+//          isFull = isFull == true ? false : true;
+//          if ( isFull == true ) {
+//            container.classList.add( 'full-width' );
+//            e.target.classList.add( 'active' );
+//          }
+//          else {
+//            container.classList.remove( 'full-width' );
+//            e.target.classList.remove( 'active' );
+//          }
+//        }
+//
+//      } );
+//    }
   }
 
   /**
