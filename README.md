@@ -19,7 +19,7 @@ Include ThreeSixty.js and three.js lib.
 Add this basic code:
 ```js
 var vars = {
-	image: 'https://dl.dropboxusercontent.com/u/153646388/360/bergsjostolen.jpg',
+	image: 'https://dl.dropboxusercontent.com/u/153646388/360/bergsjostolen.jpg',	us
 	canvas: null,
 	mobile: false,
 	containerID: 'container',
