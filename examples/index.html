@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Sixty</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+    <script src="../ThreeSixty.js"></script>
+</head>
+<body>
+<div id="form-wrp">
+    <input type="text" id="img" placeholder="Image Path" />
+    <input type="button" id="submit" value="Submit" />
+</div>
+
+<div id="container"></div>
+
+<script>
+    var update = function ( imagePath ) {
+        var vars = {
+            image: imagePath || 'https://dl.dropboxusercontent.com/u/153646388/360/bergsjostolen.jpg',
+            canvas: null,
+            mobile: false,
+            containerID: 'container',
+            controls: {
+                pause: true,
+                littlePlanet: true,
+                fullWidth: false
+            }
+        }
+        threeSixty( vars );
+    };
+
+    document.getElementById( 'submit' ).addEventListener( 'click', function () {
+        document.getElementById( 'container' ).innerHTML = '';
+        update( document.getElementById( 'img' ).value );
+    } );
+    document.onload = update();
+</script>
+</body>
+
+</html>
